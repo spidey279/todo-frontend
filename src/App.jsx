@@ -18,9 +18,13 @@ const App = () => {
   };
 
   const signIn = async ({ username, email, password }) => {
+
+const apiBaseUrl = import.meta.env.VITE_BACKEND_URL;
+
+
     try {
       const response = await axios.post(
-        "http://localhost:3000/auth/api/signin",
+        `${apiBaseUrl}/auth/api/signin`,
         {
           username,
           email,
