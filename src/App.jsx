@@ -20,7 +20,7 @@ const App = () => {
   const signIn = async ({ username, email, password }) => {
 
 const apiBaseUrl = import.meta.env.VITE_BACKEND_URL;
-
+console.log(apiBaseUrl)
 
     try {
       const response = await axios.post(
