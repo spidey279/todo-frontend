@@ -24,7 +24,7 @@ console.log(apiBaseUrl)
 
     try {
       const response = await axios.post(
-       `${apiBaseUrl}/api/signin`,
+       `${apiBaseUrl}api/signin`,
         {
           username,
           email,
