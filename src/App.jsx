@@ -14,7 +14,7 @@ const App = () => {
     setloginPopup(true);
   };
   const signInUser = () => {
-    setsignInPopup(true);
+    setsignInPopup(true)
   };
 
   const signIn = async ({ username, email, password }) => {
